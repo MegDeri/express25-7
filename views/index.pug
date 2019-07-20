@@ -6,7 +6,7 @@ html(lang="en")
     body
         div.container
             p.greet Please, log in:
-            a.logout(href="/logged") 
+            form(method='GET' action='./logged')
                 input(type="text",name="profile",placeholder="login")
                 input(type="email",name="email",placeholder="email")
                 input(type="submit",value="Submit")
